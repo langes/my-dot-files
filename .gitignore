@@ -11,6 +11,7 @@
 .mozilla
 .pki
 .ssh/id_rsa
+.ssh/known_hosts
 .vim/.netrwhist
 .viminfo
 .xsession-errors*
