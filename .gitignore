@@ -10,6 +10,7 @@
 .moonchild productions
 .mozilla
 .pki
+.ssh/id_rsa
 .vim/.netrwhist
 .viminfo
 .xsession-errors*
