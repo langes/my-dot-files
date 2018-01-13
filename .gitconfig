@@ -1,0 +1,10 @@
+[user]
+	email = sascha.lange@nord-mail.de
+	name = Sascha
+[alias]
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
+	unstage = reset HEAD --
+	last = log -1 HEAD

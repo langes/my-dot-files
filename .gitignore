@@ -1,0 +1,15 @@
+*.swp
+.bash_history
+.cache
+.config/chromium
+.config/chromium/*
+.elinks
+.gimp*
+.gnome
+.local/share/clipit/history
+.moonchild productions
+.mozilla
+.pki
+.vim/.netrwhist
+.viminfo
+.xsession-errors*

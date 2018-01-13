@@ -1,0 +1,15 @@
+---
+- hosts: all
+  tasks:
+        - name: Install basic packeges
+          package: name={{item}} state=installed
+          with_items:
+                - chromium
+                - base-devel
+                - yaourt
+                - ethtool
+                - smartmontools
+                - tmux
+                - docker
+                - docker-compose
+                - bash-completion
