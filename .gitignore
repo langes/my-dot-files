@@ -4,6 +4,7 @@
 .cache
 .config/chromium
 .config/chromium/*
+.config/gconf/desktop/gnome/peripherals/mouse/%gconf.xml
 .elinks
 .gimp*
 .gnome
