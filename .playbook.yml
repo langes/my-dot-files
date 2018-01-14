@@ -17,3 +17,15 @@
                 - packer-io
                 - python-pip
                 - python-virtualenv
+
+        - name: Install packages from yaourt
+          shell: yaourt -Suy --noconfirm {{item}}
+          with_items:
+              - chromium-widevine
+          become: true
+          become_user: sascha
+
+        - name: Install module with pip
+          shell: pip install {{item}}
+          with_items:
+              - jedi
