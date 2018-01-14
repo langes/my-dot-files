@@ -16,3 +16,4 @@
                 - vagrant
                 - packer-io
                 - python-pip
+                - python-virtualenv
