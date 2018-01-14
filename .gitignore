@@ -11,6 +11,7 @@
 .local/share/clipit/history
 .moonchild productions
 .mozilla
+.packer.d
 .pki
 .ssh/id_rsa
 .ssh/known_hosts
