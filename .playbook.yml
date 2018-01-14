@@ -13,3 +13,5 @@
                 - docker
                 - docker-compose
                 - bash-completion
+                - vagrant
+                - packer-io
