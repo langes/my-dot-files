@@ -83,6 +83,16 @@ shopt -s expand_aliases
 # Enable history appending instead of overwriting.  #139609
 shopt -s histappend
 
+# Increase history size
+export HISTFILESIZE=20000
+export HISTSIZE=10000
+
+# Combine multiline commands into one in history
+shopt -s cmdhist
+
+# Ignore duplicates in history
+HISTCONTROL=ignoredups
+
 #
 # # ex - archive extractor
 # # usage: ex <file>
