@@ -1,14 +1,18 @@
 " BASIC SETUP:
 
-" enter the current millenium
+
+" Enter the current millenium
 set nocompatible
 
-" enable systax and plugins (for netrw)
+
+" Enable systax and plugins (for netrw)
 syntax on
 filetype plugin indent on
 
+
 " Automatic reloading of .vimrc
 autocmd! bufwritepost .vimrc source %
+
 
 " Better copy & paste
 " When you want to paste large blocks of code into vim, press F2 before you
@@ -16,8 +20,16 @@ autocmd! bufwritepost .vimrc source %
 set pastetoggle=<F2>
 "" set clipboard=unnamed
 
+
 " Mouse
 set mouse=a     " on OSX press ALT and click
+
+
+" Rebind <Leader> key
+" I like to have it here becuase it is easier to reach than the default and
+" it is next to ``m`` and ``n`` which I use for navigating between tabs.
+let mapleader = ","
+
 
 " Showing line numbers and length
 set number  " show line numbers
@@ -26,25 +38,54 @@ set nowrap  " don't show autoamtically wrap on load
 set fo-=t   " don't automatically wrap text when typing
 set colorcolumn=80
 
-" TAB settings
+
+" Set tab settings:
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 set shiftround
 set expandtab
 
-" history and undo settings
+
+" Set history and undo settings:
 set history=700
 set undolevels=700
+
+
+" Show whitespace
+" MUST be inserted BEFORE the colorscheme command
+autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
+au InsertLeave * match ExtraWhitespace /\s\+$/
+
+
+" Color scheme
+" mkdir -p ~/.vim/colors && cd ~/.vim/colors
+" wget -O wombat256mod.vim http://www.vim.org/scripts/download_script.php?src_id=13400
+set t_Co=256
+color wombat256mod
+
+
+" Make search case insensitive
+set hlsearch
+set incsearch
+set ignorecase
+set smartcase
+
+
+" easier moving between tabs
+map <Leader>n <esc>:tabprevious<CR>
+map <Leader>m <esc>:tabnext<CR>
 
 
 
 
 " FINDING FILES:
 
+
 " Search down into subfolders
 " Provides tab-completion for all file-related tasks
 set path+=**
+
 
 " Display all matching files when we tab complete
 set wildmenu
@@ -61,6 +102,7 @@ set wildmenu
 
 " TAG JUMPING:
 
+
 " Create the `tags` file (may need to install ctags first)
 command! MakeTags !ctags -R .
 
@@ -76,6 +118,7 @@ command! MakeTags !ctags -R .
 
 
 " AUTOCOMPLETE:
+
 
 " The good stuff is documented in |ins-completion|
 
@@ -105,3 +148,37 @@ let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
 " - :edit a folder to open a file browser
 " - <CR>/v/t to open in an h-split/v-split/tab
 " - check |netrw-browse-maps| for more mappings
+
+
+
+
+" PLUGIN SECTION:
+
+
+" Setup Pathogen to manage your plugins
+" mkdir -p ~/.vim/autoload ~/.vim/bundle
+" curl -so ~/.vim/autoload/pathogen.vim https://raw.githubusercontent.com/tpope/vim-pathogen/master/autoload/pathogen.vim
+" Now you can install any plugin into a .vim/bundle/plugin-name/ folder
+call pathogen#infect()
+
+" Settings for vim-powerline
+" cd ~/.vim/bundle
+" git clone git://github.com/Lokaltog/vim-powerline.git
+set laststatus=2
+
+
+" Settings for jedi-vim
+" You need to install the pyhton module jedi for this!
+" sudo pip install jedi
+" cd ~/.vim/bundle
+" git clone git://github.com/davidhalter/jedi-vim.git
+let g:jedi#usages_command = "<leader>z"
+let g:jedi#popup_on_dot = 0
+let g:jedi#popup_select_first = 0
+map <Leader>b Oimport ipdb; ipdb.set_trace() # BREAKPOINT<C-c>
+
+
+" Python folding
+" mkdir -p ~/.vim/ftplugin
+" wget -O ~/.vim/ftplugin/python_editing.vim http://www.vim.org/scripts/download_script.php?src_id=5492
+set nofoldenable
