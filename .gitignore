@@ -8,13 +8,16 @@
 .elinks
 .gimp*
 .gnome
+.idlerc
 .local/share/clipit/history
 .moonchild productions
 .mozilla
 .packer.d
 .pki
+.python_history
 .ssh/id_rsa
 .ssh/known_hosts
 .vim/.netrwhist
 .viminfo
 .xsession-errors*
+projects
