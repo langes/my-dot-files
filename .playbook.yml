@@ -17,6 +17,7 @@
                 - packer-io
                 - python-pip
                 - python-virtualenv
+                - tk
 
         - name: Install packages from yaourt
           shell: yaourt -Suy --noconfirm {{item}}
