@@ -21,4 +21,5 @@
 .vim/.netrwhist
 .viminfo
 .xsession-errors*
+.zsh_history
 projects
