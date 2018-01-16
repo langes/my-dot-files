@@ -47,6 +47,14 @@ set shiftround
 set expandtab
 
 
+" Easier split navigations
+" So instead of ctrl-w then j, it’s just ctrl-j:
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
+
 " Set history and undo settings:
 set history=700
 set undolevels=700
