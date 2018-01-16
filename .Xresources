@@ -1,5 +1,6 @@
 #if __has_include(".extend.Xresources")
 #include ".extend.Xresources"
+#include ".extend.Xresources.solarized"
 #endif
 
 ! ^ The above lines are no comments!
