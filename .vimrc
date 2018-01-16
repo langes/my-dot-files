@@ -182,3 +182,9 @@ map <Leader>b Oimport ipdb; ipdb.set_trace() # BREAKPOINT<C-c>
 " mkdir -p ~/.vim/ftplugin
 " wget -O ~/.vim/ftplugin/python_editing.vim http://www.vim.org/scripts/download_script.php?src_id=5492
 set nofoldenable
+
+
+" Tabline
+" cd ~/.vim/bundle
+" git clone git://github.com/mkitt/tabline.vim.git
+let g:tablineclosebutton=1
