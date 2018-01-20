@@ -20,6 +20,7 @@
 .ssh/known_hosts
 .vim/.netrwhist
 .viminfo
+.wget-hsts
 .xsession-errors*
 .zcompdump*
 .zsh_history
