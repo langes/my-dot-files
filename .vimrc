@@ -39,6 +39,10 @@ set fo-=t   " don't automatically wrap text when typing
 set colorcolumn=80
 
 
+" Highlight current line
+set cursorline
+
+
 " Set tab settings:
 set tabstop=4
 set softtabstop=4
