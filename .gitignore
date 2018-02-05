@@ -1,5 +1,6 @@
 *.swp
 .Xauthority
+.atom
 .bash_history
 .cache
 .config/chromium
