@@ -100,3 +100,6 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
 export DEFAULT_USER="sascha"
+
+# Disable console beeping
+setopt NO_BEEP

@@ -4,6 +4,9 @@
 " Enter the current millenium
 set nocompatible
 
+" Disable beeping
+set noerrorbells
+
 
 " Enable systax and plugins (for netrw)
 syntax on
