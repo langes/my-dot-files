@@ -13,6 +13,7 @@
 .gimp*
 .gnome
 .idlerc
+.local
 .local/share/clipit/history
 .moonchild productions
 .mozilla
@@ -27,4 +28,6 @@
 .xsession-errors*
 .zcompdump*
 .zsh_history
+Downloads
+Pictures
 projects
