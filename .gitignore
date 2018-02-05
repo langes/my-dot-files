@@ -3,6 +3,7 @@
 .atom
 .bash_history
 .cache
+.config/Atom
 .config/chromium
 .config/chromium/*
 .config/dconf/user
