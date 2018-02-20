@@ -25,7 +25,7 @@ set pastetoggle=<F2>
 
 
 " Mouse
-set mouse=a     " on OSX press ALT and click
+set mouse=r     " on OSX press ALT and click
 
 
 " Rebind <Leader> key
