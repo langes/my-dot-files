@@ -9,6 +9,7 @@
 .config/chromium/*
 .config/dconf/user
 .config/gconf/desktop/gnome/peripherals/mouse/%gconf.xml
+.dmrc
 .elinks
 .gimp*
 .gnome
@@ -20,14 +21,17 @@
 .packer.d
 .pki
 .python_history
-.ssh/id_rsa
+.ssh/id*
 .ssh/known_hosts
 .vim/.netrwhist
 .viminfo
 .wget-hsts
 .xsession-errors*
 .zcompdump*
+.zsh-update
 .zsh_history
 Downloads
 Pictures
+bin
+go
 projects
