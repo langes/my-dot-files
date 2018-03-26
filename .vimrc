@@ -225,11 +225,14 @@ endfunction
 map <C-n> :cnext<CR>
 map <C-m> :cprevious<CR>
 
-"autocmd FileType go nmap <leader>b <Plug>(go-build)
+" autocmd FileType go nmap <leader>b <Plug>(go-build)
 autocmd FileType go nmap <leader>b :<C-u>call <SID>build_go_files()<CR>
 autocmd FileType go nmap <leader>r <Plug>(go-run)
 autocmd FileType go nmap <leader>t <Plug>(go-test)
 autocmd FileType go nmap <Leader>c <Plug>(go-coverage-toggle)
 autocmd FileType go set autowrite
+
+
+" Activate neocomplete
 let g:neocomplete#enable_at_startup = 1
-set completeopt-=preview
+set completeopt-=preview " disable preview " disable
