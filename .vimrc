@@ -171,12 +171,22 @@ let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
 
 " PLUGIN SECTION:
 
+" Setup vim-plug
+call plug#begin('~/.vim/plugged')
+
+Plug 'davidhalter/jedi-vim'
+Plug 'Lokaltog/vim-powerline'
+Plug 'mkitt/tabline.vim'
+Plug 'fatih/vim-go'
+Plug 'Shougo/neocomplete.vim'
+
+call plug#end()
 
 " Setup Pathogen to manage your plugins
 " mkdir -p ~/.vim/autoload ~/.vim/bundle
 " curl -so ~/.vim/autoload/pathogen.vim https://raw.githubusercontent.com/tpope/vim-pathogen/master/autoload/pathogen.vim
 " Now you can install any plugin into a .vim/bundle/plugin-name/ folder
-call pathogen#infect()
+"call pathogen#infect()
 
 " Settings for vim-powerline
 " cd ~/.vim/bundle
