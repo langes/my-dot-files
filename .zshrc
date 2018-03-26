@@ -65,6 +65,7 @@ plugins=(
   brew
   dotenv
   git
+  golang
   tmux
   vagrant
   vi-mode
