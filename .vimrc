@@ -177,7 +177,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'davidhalter/jedi-vim'
 Plug 'Lokaltog/vim-powerline'
 Plug 'mkitt/tabline.vim'
-Plug 'fatih/vim-go'
+Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
 Plug 'Shougo/neocomplete.vim'
 
 call plug#end()
