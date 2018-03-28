@@ -69,6 +69,8 @@ plugins=(
   tmux
   vagrant
   vi-mode
+  golang
+  terraform
 )
 
 source $ZSH/oh-my-zsh.sh
