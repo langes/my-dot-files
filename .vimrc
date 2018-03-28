@@ -247,3 +247,9 @@ autocmd FileType go nmap <Leader>c <Plug>(go-coverage-toggle)
 " Activate neocomplete
 let g:neocomplete#enable_at_startup = 1
 set completeopt-=preview " disable preview " disable
+
+
+" terraform plugin
+let g:terraform_align=1 " terraform indent
+let g:terraform_fold_sections=1 " allow plugin to fold and unfold resources
+let g:terraform_remap_spacebar=1 " map unfold / fold to space
