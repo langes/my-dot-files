@@ -179,6 +179,7 @@ Plug 'Lokaltog/vim-powerline'
 Plug 'mkitt/tabline.vim'
 Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
 Plug 'Shougo/neocomplete.vim'
+Plug 'hashivim/vim-terraform'
 
 call plug#end()
 
