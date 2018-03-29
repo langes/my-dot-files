@@ -253,3 +253,9 @@ set completeopt-=preview " disable preview " disable
 let g:terraform_align=1 " terraform indent
 let g:terraform_fold_sections=1 " allow plugin to fold and unfold resources
 let g:terraform_remap_spacebar=1 " map unfold / fold to space
+
+
+" vim folding
+set foldmethod=syntax
+" set foldlevel=1
+set foldclose=all
