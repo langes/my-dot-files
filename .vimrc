@@ -53,7 +53,10 @@ set shiftwidth=4
 set shiftround
 set expandtab
 
-
+" More natural split opening
+set splitbelow
+set splitright
+ 
 " Easier split navigations
 " So instead of ctrl-w then j, it’s just ctrl-j:
 nnoremap <C-J> <C-W><C-J>
@@ -180,6 +183,8 @@ Plug 'mkitt/tabline.vim'
 Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
 Plug 'Shougo/neocomplete.vim'
 Plug 'hashivim/vim-terraform'
+Plug 'baverman/vial'
+Plug 'baverman/vial-http'
 
 call plug#end()
 
