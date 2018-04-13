@@ -227,6 +227,7 @@ let g:tablineclosebutton=1
 let g:go_list_type = "quickfix" "Use only one type of lists
 let g:go_test_timeout = '10s'
 let g:go_fmt_command = "goimports"
+let g:go_auto_sameids = 1
 
 " run :GoBuild or :GoTestCompile based on the go file
 function! s:build_go_files()
