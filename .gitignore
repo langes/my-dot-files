@@ -3,6 +3,7 @@
 .atom
 .bash_history
 .cache
+.cert
 .config
 .config/Atom
 .config/chromium
@@ -23,6 +24,7 @@
 .packer.d
 .pki
 .python_history
+.ssh
 .ssh/id*
 .ssh/known_hosts
 .vim/.netrwhist
@@ -32,9 +34,9 @@
 .zcompdump*
 .zsh-update
 .zsh_history
-dreamlines
 Downloads
 Pictures
 bin
+dreamlines
 go
 projects
