@@ -19,6 +19,7 @@
 .local/share/clipit/history
 .moonchild productions
 .mozilla
+.oh-my-zsh
 .packer.d
 .pki
 .python_history
