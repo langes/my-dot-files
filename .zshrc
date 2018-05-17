@@ -68,7 +68,6 @@ plugins=(
   golang
   tmux
   vagrant
-  vi-mode
   golang
   terraform
 )
