@@ -34,9 +34,11 @@
 .zcompdump*
 .zsh-update
 .zsh_history
+Documents
 Downloads
 Pictures
 bin
 dreamlines
 go
 projects
+.psql_history
